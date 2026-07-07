@@ -7,13 +7,13 @@
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <header>
     <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
       
       <!-- Logo -->
       <a class="navbar-brand" href="index.html">
@@ -47,10 +47,146 @@
         </button>
       </div>
 
+      </div>
+      </nav>
+    </header>
+
+  <!-- ================= FORMULAIRE ================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-wrapper" style="display:flex; gap:40px; flex-wrap:wrap;">
+
+            <!-- FORMULAIRE -->
+            <form id="contactForm" style="flex:1; min-width:300px;">
+
+                <h2>Formulaire d'inscription</h2>
+
+                <label for="Nom">Nom complet</label>
+                <input type="text" id="Nom" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="phone" required>
+
+                <label for="type">Type de participation</label>
+                <select id="type" name="type" required>
+                    <option value="">Choisir</option>
+                    <option>Participant</option>
+                    <option>Startup</option>
+                    <option>Investisseur</option>
+                </select>
+
+                <label for="country">Pays</label>
+                <select id="country" name="country" required>
+                    <option value="">Choisir un pays</option>
+                    <option>Sénégal</option>
+                    <option>Ghana</option>
+                    <option>Nigeria</option>
+                    <option>Kenya</option>
+                    <option>Égypte</option>
+                    <option>Tunisie</option>
+                    <option>RDC</option>
+                    <option>Côte d’Ivoire</option>
+                </select>
+
+                <label for="message">Message / Motivation</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">S'inscrire</button>
+
+                <p id="formMsg"></p>
+
+            </form>
+
+            <!-- INFOS -->
+            <div style="flex:1; min-width:300px;">
+
+                <h2>Informations</h2>
+
+                <p><i class="bi bi-geo-alt-fill"></i> Dakar, Sénégal</p>
+                <p><i class="bi bi-telephone-fill"></i> +221 77 123 40 50</p>
+                <p><i class="bi bi-envelope-fill"></i> contact@africonnect.com</p>
+
+                <p>
+                    Le sommet rassemble les acteurs majeurs de l’innovation africaine
+                    autour de trois jours d’échanges.
+                </p>
+
+            </div>
+
+        </div>
+
     </div>
-  </nav>
-</header>
-   </header> 
+
+</section>
+
+<!-- ================= FAQ (CSS ONLY) ================= -->
+
+<section id="faq">
+
+    <div class="container">
+
+        <h2>FAQ</h2>
+
+        <!-- 1 -->
+        <details>
+            <summary>Comment s'inscrire ?</summary>
+            <p>Remplissez le formulaire et validez votre inscription en ligne.</p>
+        </details>
+
+        <!-- 2 -->
+        <details>
+            <summary>Le sommet est-il payant ?</summary>
+            <p>Une partie des accès est gratuite, les pass premium sont payants.</p>
+        </details>
+
+        <!-- 3 -->
+        <details>
+            <summary>Où se déroule l'événement ?</summary>
+            <p>À Dakar, au Centre des Expositions.</p>
+        </details>
+
+        <!-- 4 -->
+        <details>
+            <summary>Peut-on devenir speaker ?</summary>
+            <p>Oui, via une candidature sur le formulaire d'inscription.</p>
+        </details>
+
+        <!-- 5 -->
+        <details>
+            <summary>Y a-t-il un networking ?</summary>
+            <p>Oui, des sessions dédiées sont prévues chaque jour.</p>
+        </details>
+
+    </div>
+
+</section>
+
+<!-- ================= MAP ================= -->
+
+<section id="map">
+
+    <div class="container">
+
+        <h2>Localisation</h2>
+
+        <iframe
+            src="https://www.google.com/maps?q=Dakar%2C%20S%C3%A9n%C3%A9gal&output=embed"
+            width="80%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
 
 
 
@@ -65,14 +201,118 @@
 
 
 
+  <footer id="footer" class="row bg-dark">
 
+    <!-- Logo -->
+    <div class="col-lg-3 col-md-6 mb-4">
 
+        <div class="footer-logo">
+            <img
+                src="images/Logo.jpeg"
+                alt="Logo AfriConnect"
+                width="130">
+        </div>
 
+        <p class="footer-description text-white">
+            AfriConnect connecte les meilleurs freelances africains
+            aux entreprises innovantes à travers le continent.
+        </p>
+
+    </div>
+
+    <!-- Liens utiles -->
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h1 class="text-white">Liens utiles</h1>
+
+        <ul class="footer-links">
+
+            <li>
+                <a href="index.html" class="text-white">Accueil</a>
+            </li>
+
+            <li>
+                <a href="programme.html" class="text-white">Programme</a>
+            </li>
+
+            <li>
+                <a href="intervenants.html" class="text-white">Intervenants</a>
+            </li>
+
+            <li>
+                <a href="contact.html" class="text-white">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="col-lg-3 col-md-6 mb-4 text-white">
+
+        <h1>Contact</h1>
+
+        <ul class="footer-contact">
+
+            <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                Dakar, Sénégal
+            </li>
+
+            <li>
+                <i class="bi bi-telephone-fill"></i>
+                +221 77 123 40 50
+            </li>
+
+            <li>
+                <i class="bi bi-envelope-fill"></i>
+                contact@AfriConnect.com
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="col-lg-3 col-md-6 mb-4 text-white">
+
+        <h2>Suivez-nous</h2>
+
+        <a href="#" class="text-white me-3">
+            <i class="bi bi-facebook fs-3"></i>
+        </a>
+
+        <a href="#" class="text-white me-3">
+            <i class="bi bi-instagram fs-3"></i>
+        </a>
+
+        <a href="#" class="text-white me-3">
+            <i class="bi bi-linkedin fs-3"></i>
+        </a>
+
+        <a href="#" class="text-white">
+            <i class="bi bi-twitter-x fs-3"></i>
+        </a>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="col-12 text-center mt-3">
+
+        <hr class="text-white">
+
+        <p class="text-white">
+            © <span id="year"></span> AfriConnect Summit - Tous droits réservés.
+        </p>
+
+    </div>
+
+</footer>
 
 
    <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
  <!-- Votre script JavaScript -->
  <script src="js/main.js"></script>
 </body>
