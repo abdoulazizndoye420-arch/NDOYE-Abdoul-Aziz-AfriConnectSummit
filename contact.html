@@ -57,69 +57,67 @@
 
     <div class="container">
 
-        <div class="contact-wrapper" style="display:flex; gap:40px; flex-wrap:wrap;">
+        <div class="contact-wrapper">
 
-            <!-- FORMULAIRE -->
-            <form id="contactForm" style="flex:1; min-width:300px;">
+    <!-- Carte Formulaire -->
+    <div class="card">
+        <h2>Formulaire d'inscription</h2>
 
-                <h2>Formulaire d'inscription</h2>
+        <form id="contactForm">
 
-                <label for="Nom">Nom complet</label>
-                <input type="text" id="Nom" name="name" required>
+            <label for="Nom">Nom complet</label>
+            <input type="text" id="Nom" required>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
 
-                <label for="telephone">Téléphone</label>
-                <input type="tel" id="telephone" name="phone" required>
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" required>
 
-                <label for="type">Type de participation</label>
-                <select id="type" name="type" required>
-                    <option value="">Choisir</option>
-                    <option>Participant</option>
-                    <option>Startup</option>
-                    <option>Investisseur</option>
-                </select>
+            <label for="type">Type de participation</label>
+            <select id="type">
+                <option>Choisir</option>
+                <option>Participant</option>
+                <option>Startup</option>
+                <option>Investisseur</option>
+            </select>
 
-                <label for="country">Pays</label>
-                <select id="country" name="country" required>
-                    <option value="">Choisir un pays</option>
-                    <option>Sénégal</option>
-                    <option>Ghana</option>
-                    <option>Nigeria</option>
-                    <option>Kenya</option>
-                    <option>Égypte</option>
-                    <option>Tunisie</option>
-                    <option>RDC</option>
-                    <option>Côte d’Ivoire</option>
-                </select>
+            <label for="country">Pays</label>
+            <select id="country">
+                <option>Choisir un pays</option>
+                <option>Sénégal</option>
+                <option>Ghana</option>
+                <option>Nigeria</option>
+                <option>Kenya</option>
+                <option>Égypte</option>
+                <option>Tunisie</option>
+                <option>RDC</option>
+                <option>Côte d'Ivoire</option>
+            </select>
 
-                <label for="message">Message / Motivation</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message">Message / Motivation</label>
+            <textarea id="message" rows="5"></textarea>
 
-                <button type="submit">S'inscrire</button>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
 
-                <p id="formMsg"></p>
+    <!-- Carte Informations -->
+    <div class="card">
+        <h2>Informations</h2>
 
-            </form>
+        <p><i class="bi bi-geo-alt-fill"></i> Dakar, Sénégal</p>
+        <p><i class="bi bi-telephone-fill"></i> +221 77 123 40 50</p>
+        <p><i class="bi bi-envelope-fill"></i> contact@africonnect.com</p>
 
-            <!-- INFOS -->
-            <div style="flex:1; min-width:300px;">
+        <p>
+            Le sommet rassemble les acteurs majeurs de
+            l'innovation africaine autour de trois jours
+            d'échanges.
+        </p>
+    </div>
 
-                <h2>Informations</h2>
-
-                <p><i class="bi bi-geo-alt-fill"></i> Dakar, Sénégal</p>
-                <p><i class="bi bi-telephone-fill"></i> +221 77 123 40 50</p>
-                <p><i class="bi bi-envelope-fill"></i> contact@africonnect.com</p>
-
-                <p>
-                    Le sommet rassemble les acteurs majeurs de l’innovation africaine
-                    autour de trois jours d’échanges.
-                </p>
-
-            </div>
-
-        </div>
+</div>
 
     </div>
 
@@ -134,31 +132,31 @@
         <h2>FAQ</h2>
 
         <!-- 1 -->
-        <details>
+        <details class="faq-card">
             <summary>Comment s'inscrire ?</summary>
             <p>Remplissez le formulaire et validez votre inscription en ligne.</p>
         </details>
 
         <!-- 2 -->
-        <details>
+        <details class="faq-card">
             <summary>Le sommet est-il payant ?</summary>
             <p>Une partie des accès est gratuite, les pass premium sont payants.</p>
         </details>
 
         <!-- 3 -->
-        <details>
+        <details class="faq-card">
             <summary>Où se déroule l'événement ?</summary>
             <p>À Dakar, au Centre des Expositions.</p>
         </details>
 
         <!-- 4 -->
-        <details>
+        <details class="faq-card">
             <summary>Peut-on devenir speaker ?</summary>
             <p>Oui, via une candidature sur le formulaire d'inscription.</p>
         </details>
 
         <!-- 5 -->
-        <details>
+        <details class="faq-card">
             <summary>Y a-t-il un networking ?</summary>
             <p>Oui, des sessions dédiées sont prévues chaque jour.</p>
         </details>
@@ -214,8 +212,8 @@
         </div>
 
         <p class="footer-description text-white">
-            AfriConnect connecte les meilleurs freelances africains
-            aux entreprises innovantes à travers le continent.
+            AfriConnect réunit développeurs, entrepreneurs
+            et investisseurs du continent.
         </p>
 
     </div>
