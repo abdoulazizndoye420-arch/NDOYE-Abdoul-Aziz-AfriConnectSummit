@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       
       <!-- Logo -->
@@ -21,7 +21,12 @@
       </a>
 
       <!-- Bouton menu mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"> arial-label="menu de navigation"
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-label="Menu de navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -32,7 +37,7 @@
             <a class="nav-link active" href="index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="programme.html">Programme</a>
+            <a class="nav-link" href="programme.html">Programme</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="intervenants.html">Intervenants</a>
@@ -43,6 +48,9 @@
         </ul>
         <button class="btn btn-primary ms-3">
           Rejoindre AfriConnect
+        </button>
+        <button id="themeToggle" class="btn btn-outline-light ms-2">
+            🌙
         </button>
       </div>
 
@@ -64,13 +72,6 @@
     </div>
 
     <div class="badge">
-      <div class="badge-top">
-        <span>Badge Nº 2026-AC</span>
-        <span>Accès 3 jours</span>
-      </div>
-      <p class="eyebrow" style="margin-bottom:0;">Ouverture dans</p>
-      <p class="badge-place">Centre des Expositions, <b>Dakar</b></p>
-
       <div class="countdown" id="countdown">
         <div class="count-unit"><span class="num" id="cd-days">00</span><span class="lbl">Jours</span></div>
         <div class="count-unit"><span class="num" id="cd-hours">00</span><span class="lbl">Heures</span></div>
@@ -224,7 +225,9 @@
     </div>
 </section>
 
-<a href="#" class="btn btn-primary">↑</a>
+<button id="backToTop" class="btn btn-primary">
+    ↑
+</button>
 <!-- ============================================================
      FOOTER
      ============================================================ -->
